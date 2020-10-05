@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/996973c893.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+   
+
+   
+</head>
+<body>
+	 <nav class="navbar navbar-expand-lg nav_style p-3">
+  <a class="navbar-brand pl-5">Covid-19 Tracking</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto pr-5">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="Symptoms.html">Symptoms</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Prevention</a>
+      </li>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="Contacts.html">Contacts</a>
+      </li>
+     
+    </ul>
+  
+  </div>
+</nav>
+
+  <div class="container-fluid sub_section pt-5 pb-5" id="aboutid">
+   <div class="container-fluid bg-light p-5 text-center my-3">
+      <h1>To Prevent Sprade of Coronavirus</h1>
+      <h3>Follow this</h3>
+    </div>
+
+  <div class="center">
+    <div class="zoom">
+      <div class="parent">
+  <img class="image1" src="Images/all_2.jpg" />
+  <img class="image2" src="Images/all_1.jpg" />
+</div>
+    </div>
+     
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+ 
+  </div>
+</body>
+</html>
